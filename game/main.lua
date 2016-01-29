@@ -124,11 +124,6 @@ function mainmenu:leave()
     
     unload.menugraphics()
 
-    bgmtitle:stop()
-
-    bgmtitle = nil
-    collectgarbage()
-
 end
 
 function levelselect:enter(from, course)
@@ -198,6 +193,11 @@ function levelselect:mousepressed(key)
 end
 
 function levelselect:leave()
+
+    bgmtitle:stop()
+
+    bgmtitle = nil
+    collectgarbage()
 
     unload.levelselectgraphics()
     levelselectcleanup8x4()

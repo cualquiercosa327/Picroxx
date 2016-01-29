@@ -238,13 +238,6 @@ function unload.menugraphics()
 
     overlay.mariopicross = nil
 
-    button1.label = nil
-    button2.label = nil
-	button3.label = nil
-	button4.label = nil
-	button5.label = nil
-	button6.label = nil
-
 end
 
 function unload.puzzlegraphics()  

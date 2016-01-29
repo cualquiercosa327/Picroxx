@@ -47,12 +47,12 @@ function input.checkbuttonpress(buttonpressed) --Checks if a button in the main 
 			
 		  if buttonpressed.effect == "levelselect" then
 		    
-			mainmenu.buttonsExit = true
+			animation.buttonsexit()
 			
 			menu.emptybutton_e:reset()
 			menu.emptybutton_s:reset()
 			
-			Timer.after(0.35, function() Gamestate.switch(levelselect, buttonpressed.submenu) mainmenu.buttonsExit = false mainmenu.buttonsEnter = true end)
+			Timer.after(0.35, function() Gamestate.switch(levelselect, buttonpressed.submenu) animation.buttonsenter() end)
 			
 		  end
 		  

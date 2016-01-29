@@ -16,11 +16,12 @@
     button2.y = 80
     button2.x2 = 215 
     button2.y2 = 104
-    button2.effect = "none"
+    button2.effect = "levelselect"
     button2.text = "Kinoko"
     button2.exists = true
     button2.hover = false
-    button2.submenu = "none"
+    button2.submenu = "courses/mariopicross/kinoko/course.lua"
+    button2.label = love.graphics.newImage("gfx/mainmenu/buttons/kinoko.png")
 	
     button3.x = 103
     button3.y = 116

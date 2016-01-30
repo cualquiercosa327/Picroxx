@@ -149,41 +149,77 @@ function init.fonts()
 
 	--These characters are used for the reference numbers in the bottom screen.
 	
-    local number0 = love.graphics.newImage('gfx/misc/font/numbers/0.png')
-	local number1 = love.graphics.newImage('gfx/misc/font/numbers/1.png')
-	local number2 = love.graphics.newImage('gfx/misc/font/numbers/2.png')
-	local number3 = love.graphics.newImage('gfx/misc/font/numbers/3.png')
-	local number4 = love.graphics.newImage('gfx/misc/font/numbers/4.png')
-	local number5 = love.graphics.newImage('gfx/misc/font/numbers/5.png')
-	local number6 = love.graphics.newImage('gfx/misc/font/numbers/6.png')
-	local number7 = love.graphics.newImage('gfx/misc/font/numbers/7.png')
-	local number8 = love.graphics.newImage('gfx/misc/font/numbers/8.png')
-	local number9 = love.graphics.newImage('gfx/misc/font/numbers/9.png')
-	local number10 = love.graphics.newImage('gfx/misc/font/numbers/10.png')
-	local number11 = love.graphics.newImage('gfx/misc/font/numbers/11.png')
-	local number12 = love.graphics.newImage('gfx/misc/font/numbers/12.png')
-	local number13 = love.graphics.newImage('gfx/misc/font/numbers/13.png')
-	local number14 = love.graphics.newImage('gfx/misc/font/numbers/14.png')
-	local number15 = love.graphics.newImage('gfx/misc/font/numbers/15.png')
+	local number1 = love.graphics.newImage('gfx/misc/font/numbers/big/black/1.png')
+	local number2 = love.graphics.newImage('gfx/misc/font/numbers/big/black/2.png')
+	local number3 = love.graphics.newImage('gfx/misc/font/numbers/big/black/3.png')
+	local number4 = love.graphics.newImage('gfx/misc/font/numbers/big/black/4.png')
+	local number5 = love.graphics.newImage('gfx/misc/font/numbers/big/black/5.png')
+	local number6 = love.graphics.newImage('gfx/misc/font/numbers/big/black/6.png')
+	local number7 = love.graphics.newImage('gfx/misc/font/numbers/big/black/7.png')
+	local number8 = love.graphics.newImage('gfx/misc/font/numbers/big/black/8.png')
+	local number9 = love.graphics.newImage('gfx/misc/font/numbers/big/black/9.png')
+	local number10 = love.graphics.newImage('gfx/misc/font/numbers/big/black/10.png')
+	local number11 = love.graphics.newImage('gfx/misc/font/numbers/big/black/11.png')
+	local number12 = love.graphics.newImage('gfx/misc/font/numbers/big/black/12.png')
+	local number13 = love.graphics.newImage('gfx/misc/font/numbers/big/black/13.png')
+	local number14 = love.graphics.newImage('gfx/misc/font/numbers/big/black/14.png')
+	local number15 = love.graphics.newImage('gfx/misc/font/numbers/big/black/15.png')
+
+	--These characters are used for the reference numbers in the bottom screen.
+	
+    local gnumber0 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/0.png')
+	local gnumber1 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/1.png')
+	local gnumber2 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/2.png')
+	local gnumber3 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/3.png')
+	local gnumber4 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/4.png')
+	local gnumber5 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/5.png')
+	local gnumber6 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/6.png')
+	local gnumber7 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/7.png')
+	local gnumber8 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/8.png')
+	local gnumber9 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/9.png')
+	local gnumber10 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/10.png')
+	local gnumber11 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/11.png')
+	local gnumber12 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/12.png')
+	local gnumber13 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/13.png')
+	local gnumber14 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/14.png')
+	local gnumber15 = love.graphics.newImage('gfx/misc/font/numbers/big/grey/15.png')
 	
 	--These characters are used for the reference numbers on puzzles of size 15x15 and up.
 	
-	local snumber0 = love.graphics.newImage('gfx/misc/font/numbers/small/0.png')
-	local snumber1 = love.graphics.newImage('gfx/misc/font/numbers/small/1.png')
-	local snumber2 = love.graphics.newImage('gfx/misc/font/numbers/small/2.png')
-	local snumber3 = love.graphics.newImage('gfx/misc/font/numbers/small/3.png')
-	local snumber4 = love.graphics.newImage('gfx/misc/font/numbers/small/4.png')
-	local snumber5 = love.graphics.newImage('gfx/misc/font/numbers/small/5.png')
-	local snumber6 = love.graphics.newImage('gfx/misc/font/numbers/small/6.png')
-	local snumber7 = love.graphics.newImage('gfx/misc/font/numbers/small/7.png')
-	local snumber8 = love.graphics.newImage('gfx/misc/font/numbers/small/8.png')
-	local snumber9 = love.graphics.newImage('gfx/misc/font/numbers/small/9.png')
-	local snumber10 = love.graphics.newImage('gfx/misc/font/numbers/small/10.png')
-	local snumber11 = love.graphics.newImage('gfx/misc/font/numbers/small/11.png')
-	local snumber12 = love.graphics.newImage('gfx/misc/font/numbers/small/12.png')
-	local snumber13 = love.graphics.newImage('gfx/misc/font/numbers/small/13.png')
-	local snumber14 = love.graphics.newImage('gfx/misc/font/numbers/small/14.png')
-	local snumber15 = love.graphics.newImage('gfx/misc/font/numbers/small/15.png')
+	local snumber1 = love.graphics.newImage('gfx/misc/font/numbers/small/black/1.png')
+	local snumber2 = love.graphics.newImage('gfx/misc/font/numbers/small/black/2.png')
+	local snumber3 = love.graphics.newImage('gfx/misc/font/numbers/small/black/3.png')
+	local snumber4 = love.graphics.newImage('gfx/misc/font/numbers/small/black/4.png')
+	local snumber5 = love.graphics.newImage('gfx/misc/font/numbers/small/black/5.png')
+	local snumber6 = love.graphics.newImage('gfx/misc/font/numbers/small/black/6.png')
+	local snumber7 = love.graphics.newImage('gfx/misc/font/numbers/small/black/7.png')
+	local snumber8 = love.graphics.newImage('gfx/misc/font/numbers/small/black/8.png')
+	local snumber9 = love.graphics.newImage('gfx/misc/font/numbers/small/black/9.png')
+	local snumber10 = love.graphics.newImage('gfx/misc/font/numbers/small/black/10.png')
+	local snumber11 = love.graphics.newImage('gfx/misc/font/numbers/small/black/11.png')
+	local snumber12 = love.graphics.newImage('gfx/misc/font/numbers/small/black/12.png')
+	local snumber13 = love.graphics.newImage('gfx/misc/font/numbers/small/black/13.png')
+	local snumber14 = love.graphics.newImage('gfx/misc/font/numbers/small/black/14.png')
+	local snumber15 = love.graphics.newImage('gfx/misc/font/numbers/small/black/15.png')
+
+	--These characters are used for the reference numbers on puzzles of size 15x15 and up.
+	
+	local sgnumber0 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/0.png')
+	local sgnumber1 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/1.png')
+	local sgnumber2 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/2.png')
+	local sgnumber3 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/3.png')
+	local sgnumber4 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/4.png')
+	local sgnumber5 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/5.png')
+	local sgnumber6 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/6.png')
+	local sgnumber7 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/7.png')
+	local sgnumber8 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/8.png')
+	local sgnumber9 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/9.png')
+	local sgnumber10 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/10.png')
+	local sgnumber11 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/11.png')
+	local sgnumber12 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/12.png')
+	local sgnumber13 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/13.png')
+	local sgnumber14 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/14.png')
+	local sgnumber15 = love.graphics.newImage('gfx/misc/font/numbers/small/grey/15.png')
 	
 	--These characters are used for the numbers in the timer located in the top screen.
 	
@@ -198,8 +234,10 @@ function init.fonts()
 	local timer8 = love.graphics.newImage('gfx/misc/font/timer/8.png')
 	local timer9 = love.graphics.newImage('gfx/misc/font/timer/9.png')
 	
-	fontnumbers = {number1, number2, number3, number4, number5, number6, number7, number8, number9, number10, number11, number12, number13, number14, number15, number0}
-	fontsnumbers = {snumber1, snumber2, snumber3, snumber4, snumber5, snumber6, snumber7, snumber8, snumber9, snumber10, snumber11, snumber12, snumber13, snumber14, snumber15, snumber0}
+	fontnumbers = {number1, number2, number3, number4, number5, number6, number7, number8, number9, number10, number11, number12, number13, number14, number15}
+	fontsnumbers = {snumber1, snumber2, snumber3, snumber4, snumber5, snumber6, snumber7, snumber8, snumber9, snumber10, snumber11, snumber12, snumber13, snumber14, snumber15}
+	fontsgnumbers = {sgnumber1, sgnumber2, sgnumber3, sgnumber4, sgnumber5, sgnumber6, sgnumber7, sgnumber8, sgnumber9, sgnumber10, sgnumber11, sgnumber12, sgnumber13, sgnumber14, sgnumber15, sgnumber0}
+	fontgnumbers = {gnumber1, gnumber2, gnumber3, gnumber4, gnumber5, gnumber6, gnumber7, gnumber8, gnumber9, gnumber10, gnumber11, gnumber12, gnumber13, gnumber14, gnumber15, gnumber0}
 	timerdigits = {timer0, timer1, timer2, timer3, timer4, timer5, timer6, timer7, timer8, timer9}
 	
 end

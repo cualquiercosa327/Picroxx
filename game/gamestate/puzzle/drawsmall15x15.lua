@@ -4,37 +4,37 @@ function drawtop.smallgrid15(drawnumbers)
 	
 	if drawnumbers == true then
 	
-	  drawbot.smallnumbersrow15(numbersrow1, 40, 88)    --Draws all the reference numbers for the rows (horiontal)
-      drawbot.smallnumbersrow15(numbersrow2, 40, 96)
-	  drawbot.smallnumbersrow15(numbersrow3, 40, 104)
-	  drawbot.smallnumbersrow15(numbersrow4, 40, 112)
-	  drawbot.smallnumbersrow15(numbersrow5, 40, 120)
-	  drawbot.smallnumbersrow15(numbersrow6, 40, 128)
-	  drawbot.smallnumbersrow15(numbersrow7, 40, 136)
-	  drawbot.smallnumbersrow15(numbersrow8, 40, 144)
-	  drawbot.smallnumbersrow15(numbersrow9, 40, 152)
-	  drawbot.smallnumbersrow15(numbersrow10, 40, 160)
-	  drawbot.smallnumbersrow15(numbersrow11, 40, 168)
-	  drawbot.smallnumbersrow15(numbersrow12, 40, 176)
-	  drawbot.smallnumbersrow15(numbersrow13, 40, 184)
-	  drawbot.smallnumbersrow15(numbersrow14, 40, 192)
-	  drawbot.smallnumbersrow15(numbersrow15, 40, 200)
+	  drawbot.smallnumbersrow15(1, 40, 88)    --Draws all the reference numbers for the rows (horiontal)
+      drawbot.smallnumbersrow15(2, 40, 96)
+	  drawbot.smallnumbersrow15(3, 40, 104)
+	  drawbot.smallnumbersrow15(4, 40, 112)
+	  drawbot.smallnumbersrow15(5, 40, 120)
+	  drawbot.smallnumbersrow15(6, 40, 128)
+	  drawbot.smallnumbersrow15(7, 40, 136)
+	  drawbot.smallnumbersrow15(8, 40, 144)
+	  drawbot.smallnumbersrow15(9, 40, 152)
+	  drawbot.smallnumbersrow15(10, 40, 160)
+	  drawbot.smallnumbersrow15(11, 40, 168)
+	  drawbot.smallnumbersrow15(12, 40, 176)
+	  drawbot.smallnumbersrow15(13, 40, 184)
+	  drawbot.smallnumbersrow15(14, 40, 192)
+	  drawbot.smallnumbersrow15(15, 40, 200)
 	
-	  drawbot.smallnumberscolumn15(numberscolumn1, 168)    --Draws all the reference numbers for the columns (vertical)
-      drawbot.smallnumberscolumn15(numberscolumn2, 176)
-	  drawbot.smallnumberscolumn15(numberscolumn3, 184)
-	  drawbot.smallnumberscolumn15(numberscolumn4, 192)
-	  drawbot.smallnumberscolumn15(numberscolumn5, 200)
-	  drawbot.smallnumberscolumn15(numberscolumn6, 208)
-	  drawbot.smallnumberscolumn15(numberscolumn7, 216)
-	  drawbot.smallnumberscolumn15(numberscolumn8, 224)
-	  drawbot.smallnumberscolumn15(numberscolumn9, 232)
-	  drawbot.smallnumberscolumn15(numberscolumn10, 240)
-	  drawbot.smallnumberscolumn15(numberscolumn11, 248)
-	  drawbot.smallnumberscolumn15(numberscolumn12, 256)
-	  drawbot.smallnumberscolumn15(numberscolumn13, 264)
-	  drawbot.smallnumberscolumn15(numberscolumn14, 272)
-	  drawbot.smallnumberscolumn15(numberscolumn15, 280)
+	  drawbot.smallnumberscolumn15(1, 168)    --Draws all the reference numbers for the columns (vertical)
+      drawbot.smallnumberscolumn15(2, 176)
+	  drawbot.smallnumberscolumn15(3, 184)
+	  drawbot.smallnumberscolumn15(4, 192)
+	  drawbot.smallnumberscolumn15(5, 200)
+	  drawbot.smallnumberscolumn15(6, 208)
+	  drawbot.smallnumberscolumn15(7, 216)
+	  drawbot.smallnumberscolumn15(8, 224)
+	  drawbot.smallnumberscolumn15(9, 232)
+	  drawbot.smallnumberscolumn15(10, 240)
+	  drawbot.smallnumberscolumn15(11, 248)
+	  drawbot.smallnumberscolumn15(12, 256)
+	  drawbot.smallnumberscolumn15(13, 264)
+	  drawbot.smallnumberscolumn15(14, 272)
+	  drawbot.smallnumberscolumn15(15, 280)
 	
 	end
 	
@@ -286,37 +286,37 @@ function drawbot.smallgrid15(drawnumbers)
     
 	if drawnumbers == true then
 	
-	  drawbot.smallnumbersrow15(numbersrow1, 0, 88)    --Draws all the reference numbers for the rows (horiontal)
-      drawbot.smallnumbersrow15(numbersrow2, 0, 96)
-	  drawbot.smallnumbersrow15(numbersrow3, 0, 104)
-	  drawbot.smallnumbersrow15(numbersrow4, 0, 112)
-	  drawbot.smallnumbersrow15(numbersrow5, 0, 120)
-	  drawbot.smallnumbersrow15(numbersrow6, 0, 128)
-	  drawbot.smallnumbersrow15(numbersrow7, 0, 136)
-	  drawbot.smallnumbersrow15(numbersrow8, 0, 144)
-	  drawbot.smallnumbersrow15(numbersrow9, 0, 152)
-	  drawbot.smallnumbersrow15(numbersrow10, 0, 160)
-	  drawbot.smallnumbersrow15(numbersrow11, 0, 168)
-	  drawbot.smallnumbersrow15(numbersrow12, 0, 176)
-	  drawbot.smallnumbersrow15(numbersrow13, 0, 184)
-	  drawbot.smallnumbersrow15(numbersrow14, 0, 192)
-	  drawbot.smallnumbersrow15(numbersrow15, 0, 200)
+	  drawbot.smallnumbersrow15(1, 0, 88)    --Draws all the reference numbers for the rows (horiontal)
+      drawbot.smallnumbersrow15(2, 0, 96)
+	  drawbot.smallnumbersrow15(3, 0, 104)
+	  drawbot.smallnumbersrow15(4, 0, 112)
+	  drawbot.smallnumbersrow15(5, 0, 120)
+	  drawbot.smallnumbersrow15(6, 0, 128)
+	  drawbot.smallnumbersrow15(7, 0, 136)
+	  drawbot.smallnumbersrow15(8, 0, 144)
+	  drawbot.smallnumbersrow15(9, 0, 152)
+	  drawbot.smallnumbersrow15(10, 0, 160)
+	  drawbot.smallnumbersrow15(11, 0, 168)
+	  drawbot.smallnumbersrow15(12, 0, 176)
+	  drawbot.smallnumbersrow15(13, 0, 184)
+	  drawbot.smallnumbersrow15(14, 0, 192)
+	  drawbot.smallnumbersrow15(15, 0, 200)
 	
-	  drawbot.smallnumberscolumn15(numberscolumn1, 128)    --Draws all the reference numbers for the columns (vertical)
-      drawbot.smallnumberscolumn15(numberscolumn2, 136)
-	  drawbot.smallnumberscolumn15(numberscolumn3, 144)
-	  drawbot.smallnumberscolumn15(numberscolumn4, 152)
-	  drawbot.smallnumberscolumn15(numberscolumn5, 160)
-	  drawbot.smallnumberscolumn15(numberscolumn6, 168)
-	  drawbot.smallnumberscolumn15(numberscolumn7, 176)
-	  drawbot.smallnumberscolumn15(numberscolumn8, 184)
-	  drawbot.smallnumberscolumn15(numberscolumn9, 192)
-	  drawbot.smallnumberscolumn15(numberscolumn10, 200)
-	  drawbot.smallnumberscolumn15(numberscolumn11, 208)
-	  drawbot.smallnumberscolumn15(numberscolumn12, 216)
-	  drawbot.smallnumberscolumn15(numberscolumn13, 224)
-	  drawbot.smallnumberscolumn15(numberscolumn14, 232)
-	  drawbot.smallnumberscolumn15(numberscolumn15, 240)
+	  drawbot.smallnumberscolumn15(1, 128)    --Draws all the reference numbers for the columns (vertical)
+      drawbot.smallnumberscolumn15(2, 136)
+	  drawbot.smallnumberscolumn15(3, 144)
+	  drawbot.smallnumberscolumn15(4, 152)
+	  drawbot.smallnumberscolumn15(5, 160)
+	  drawbot.smallnumberscolumn15(6, 168)
+	  drawbot.smallnumberscolumn15(7, 176)
+	  drawbot.smallnumberscolumn15(8, 184)
+	  drawbot.smallnumberscolumn15(9, 192)
+	  drawbot.smallnumberscolumn15(10, 200)
+	  drawbot.smallnumberscolumn15(11, 208)
+	  drawbot.smallnumberscolumn15(12, 216)
+	  drawbot.smallnumberscolumn15(13, 224)
+	  drawbot.smallnumberscolumn15(14, 232)
+	  drawbot.smallnumberscolumn15(15, 240)
 	  
 	end
 	
@@ -578,138 +578,150 @@ function drawbot.smallgrid15(drawnumbers)
 
 end
 
-function drawbot.smallnumbersrow15(row, offset, y) --Used to draw the reference numbers of a row
+function drawbot.smallnumbersrow15(index, offset, y) --Used to draw the reference numbers of a row
+
+	local referenceNumbers = _G["numbersrow"..index]
+
+    local font = fontnumbers
+
+    if completedRows[index] == 1 then font = fontsgnumbers else font = fontsnumbers end
 	
-	if row[1] > 0 then                                  --Checks if there is at least one line
-        if row[2] > 0 then                              --Checks if there are more than 2 lines
-            if row[3] > 0 then                          --Checks if there are more than 3 lines
-                if row[4] > 0 then                      --Checks if there are more than 4 lines
-                    if row[5] > 0 then                  --Checks if there are more than 5 lines
-					    if row[6] > 0 then              --Checks if there are more than 6 lines
-                            if row[7] > 0 then          --Checks if there are more than 7 lines
-                                if row[8] > 0 then      --Checks if there are more than 8 lines
+	if referenceNumbers[1] > 0 then                                  --Checks if there is at least one line
+        if referenceNumbers[2] > 0 then                              --Checks if there are more than 2 lines
+            if referenceNumbers[3] > 0 then                          --Checks if there are more than 3 lines
+                if referenceNumbers[4] > 0 then                      --Checks if there are more than 4 lines
+                    if referenceNumbers[5] > 0 then                  --Checks if there are more than 5 lines
+					    if referenceNumbers[6] > 0 then              --Checks if there are more than 6 lines
+                            if referenceNumbers[7] > 0 then          --Checks if there are more than 7 lines
+                                if referenceNumbers[8] > 0 then      --Checks if there are more than 8 lines
 					
-                                  love.graphics.draw(fontsnumbers[row[1]], offset + 63, y) --Draws eight because there are eight numbers
-	                              love.graphics.draw(fontsnumbers[row[2]], offset + 71, y)
-				                  love.graphics.draw(fontsnumbers[row[3]], offset + 79, y)
-					              love.graphics.draw(fontsnumbers[row[4]], offset + 87, y)
-					              love.graphics.draw(fontsnumbers[row[5]], offset + 95, y) 
-								  love.graphics.draw(fontsnumbers[row[6]], offset + 103, y)
-								  love.graphics.draw(fontsnumbers[row[7]], offset + 111, y)
-								  love.graphics.draw(fontsnumbers[row[8]], offset + 119, y)
+                                  love.graphics.draw(font[referenceNumbers[1]], offset + 63, y) --Draws eight because there are eight numbers
+	                              love.graphics.draw(font[referenceNumbers[2]], offset + 71, y)
+				                  love.graphics.draw(font[referenceNumbers[3]], offset + 79, y)
+					              love.graphics.draw(font[referenceNumbers[4]], offset + 87, y)
+					              love.graphics.draw(font[referenceNumbers[5]], offset + 95, y) 
+								  love.graphics.draw(font[referenceNumbers[6]], offset + 103, y)
+								  love.graphics.draw(font[referenceNumbers[7]], offset + 111, y)
+								  love.graphics.draw(font[referenceNumbers[8]], offset + 119, y)
                                 else
-                                  love.graphics.draw(fontsnumbers[row[1]], offset + 71, y) --Draws seven because there are seven numbers (not eight)
-	                              love.graphics.draw(fontsnumbers[row[2]], offset + 79, y)
-				                  love.graphics.draw(fontsnumbers[row[3]], offset + 87, y)
-					              love.graphics.draw(fontsnumbers[row[4]], offset + 95, y)
-								  love.graphics.draw(fontsnumbers[row[5]], offset + 103, y)
-								  love.graphics.draw(fontsnumbers[row[6]], offset + 111, y)
-								  love.graphics.draw(fontsnumbers[row[7]], offset + 119, y)
+                                  love.graphics.draw(font[referenceNumbers[1]], offset + 71, y) --Draws seven because there are seven numbers (not eight)
+	                              love.graphics.draw(font[referenceNumbers[2]], offset + 79, y)
+				                  love.graphics.draw(font[referenceNumbers[3]], offset + 87, y)
+					              love.graphics.draw(font[referenceNumbers[4]], offset + 95, y)
+								  love.graphics.draw(font[referenceNumbers[5]], offset + 103, y)
+								  love.graphics.draw(font[referenceNumbers[6]], offset + 111, y)
+								  love.graphics.draw(font[referenceNumbers[7]], offset + 119, y)
                                 end
                             else
-                              love.graphics.draw(fontsnumbers[row[1]], offset + 79, y) --Draws six because there are three numbers (not seven)
-	                          love.graphics.draw(fontsnumbers[row[2]], offset + 87, y) 
-				              love.graphics.draw(fontsnumbers[row[3]], offset + 95, y)
-							  love.graphics.draw(fontsnumbers[row[4]], offset + 103, y)
-							  love.graphics.draw(fontsnumbers[row[5]], offset + 111, y)
-							  love.graphics.draw(fontsnumbers[row[6]], offset + 119, y)
+                              love.graphics.draw(font[referenceNumbers[1]], offset + 79, y) --Draws six because there are three numbers (not seven)
+	                          love.graphics.draw(font[referenceNumbers[2]], offset + 87, y) 
+				              love.graphics.draw(font[referenceNumbers[3]], offset + 95, y)
+							  love.graphics.draw(font[referenceNumbers[4]], offset + 103, y)
+							  love.graphics.draw(font[referenceNumbers[5]], offset + 111, y)
+							  love.graphics.draw(font[referenceNumbers[6]], offset + 119, y)
                             end
 		                else
-		                  love.graphics.draw(fontsnumbers[row[1]], offset + 87, y) --Draws five because there are two numbers (not six)
-	                      love.graphics.draw(fontsnumbers[row[2]], offset + 95, y)
-						  love.graphics.draw(fontsnumbers[row[3]], offset + 103, y)
-						  love.graphics.draw(fontsnumbers[row[4]], offset + 111, y)
-						  love.graphics.draw(fontsnumbers[row[5]], offset + 119, y)
+		                  love.graphics.draw(font[referenceNumbers[1]], offset + 87, y) --Draws five because there are two numbers (not six)
+	                      love.graphics.draw(font[referenceNumbers[2]], offset + 95, y)
+						  love.graphics.draw(font[referenceNumbers[3]], offset + 103, y)
+						  love.graphics.draw(font[referenceNumbers[4]], offset + 111, y)
+						  love.graphics.draw(font[referenceNumbers[5]], offset + 119, y)
 		                end 
                     else
-                      love.graphics.draw(fontsnumbers[row[1]], offset + 95, y) --Draws four because there are four numbers (not five)
-	                  love.graphics.draw(fontsnumbers[row[2]], offset + 103, y)
-				      love.graphics.draw(fontsnumbers[row[3]], offset + 111, y)
-					  love.graphics.draw(fontsnumbers[row[4]], offset + 119, y)
+                      love.graphics.draw(font[referenceNumbers[1]], offset + 95, y) --Draws four because there are four numbers (not five)
+	                  love.graphics.draw(font[referenceNumbers[2]], offset + 103, y)
+				      love.graphics.draw(font[referenceNumbers[3]], offset + 111, y)
+					  love.graphics.draw(font[referenceNumbers[4]], offset + 119, y)
 
                     end
                 else
-                  love.graphics.draw(fontsnumbers[row[1]], offset + 103, y) --Draws three because there are three numbers (not four)
-	              love.graphics.draw(fontsnumbers[row[2]], offset + 111, y) 
-				  love.graphics.draw(fontsnumbers[row[3]], offset + 119, y)
+                  love.graphics.draw(font[referenceNumbers[1]], offset + 103, y) --Draws three because there are three numbers (not four)
+	              love.graphics.draw(font[referenceNumbers[2]], offset + 111, y) 
+				  love.graphics.draw(font[referenceNumbers[3]], offset + 119, y)
                 end
 		    else
-		      love.graphics.draw(fontsnumbers[row[1]], offset + 111, y) --Draws two because there are two numbers (not three)
-	          love.graphics.draw(fontsnumbers[row[2]], offset + 119, y)
+		      love.graphics.draw(font[referenceNumbers[1]], offset + 111, y) --Draws two because there are two numbers (not three)
+	          love.graphics.draw(font[referenceNumbers[2]], offset + 119, y)
 		    end
         else
-          love.graphics.draw(fontsnumbers[row[1]], offset + 119, y) --Draws one because there is only one number (not two)
+          love.graphics.draw(font[referenceNumbers[1]], offset + 119, y) --Draws one because there is only one number (not two)
         end
 	else
-	  love.graphics.draw(fontsnumbers[16], offset + 119, y) --Draws a 0 because there aren't any numbers
+	  love.graphics.draw(fontsgnumbers[16], offset + 119, y) --Draws a 0 because there aren't any numbers
 	end
 	
 end
 
-function drawbot.smallnumberscolumn15(column, x) --Used to draw the reference numbers of a column
+function drawbot.smallnumberscolumn15(index, x) --Used to draw the reference numbers of a column
+
+	local referenceNumbers = _G["numberscolumn"..index]
+
+    local font = fontsnumbers
+
+    if completedColumns[index] == 1 then font = fontsgnumbers else font = fontsnumbers end
     
-	if column[1] > 0 then                                  --Checks if there is at least one line
-        if column[2] > 0 then                              --Checks if there are more than 2 lines
-            if column[3] > 0 then                          --Checks if there are more than 3 lines
-                if column[4] > 0 then                      --Checks if there are more than 4 lines
-                    if column[5] > 0 then                  --Checks if there are more than 5 lines
-					    if column[6] > 0 then              --Checks if there are more than 6 lines
-                            if column[7] > 0 then          --Checks if there are more than 7 lines
-                                if column[8] > 0 then      --Checks if there are more than 8 lines
+	if referenceNumbers[1] > 0 then                                  --Checks if there is at least one line
+        if referenceNumbers[2] > 0 then                              --Checks if there are more than 2 lines
+            if referenceNumbers[3] > 0 then                          --Checks if there are more than 3 lines
+                if referenceNumbers[4] > 0 then                      --Checks if there are more than 4 lines
+                    if referenceNumbers[5] > 0 then                  --Checks if there are more than 5 lines
+					    if referenceNumbers[6] > 0 then              --Checks if there are more than 6 lines
+                            if referenceNumbers[7] > 0 then          --Checks if there are more than 7 lines
+                                if referenceNumbers[8] > 0 then      --Checks if there are more than 8 lines
 					
-                                  love.graphics.draw(fontsnumbers[column[1]], x, 31) --Draws eight because there are eight numbers
-	                              love.graphics.draw(fontsnumbers[column[2]], x, 38)
-				                  love.graphics.draw(fontsnumbers[column[3]], x, 45)
-					              love.graphics.draw(fontsnumbers[column[4]], x, 52)
-					              love.graphics.draw(fontsnumbers[column[5]], x, 59) 
-								  love.graphics.draw(fontsnumbers[column[6]], x, 66)
-								  love.graphics.draw(fontsnumbers[column[7]], x, 73)
-								  love.graphics.draw(fontsnumbers[column[8]], x, 80)
+                                  love.graphics.draw(font[referenceNumbers[1]], x, 31) --Draws eight because there are eight numbers
+	                              love.graphics.draw(font[referenceNumbers[2]], x, 38)
+				                  love.graphics.draw(font[referenceNumbers[3]], x, 45)
+					              love.graphics.draw(font[referenceNumbers[4]], x, 52)
+					              love.graphics.draw(font[referenceNumbers[5]], x, 59) 
+								  love.graphics.draw(font[referenceNumbers[6]], x, 66)
+								  love.graphics.draw(font[referenceNumbers[7]], x, 73)
+								  love.graphics.draw(font[referenceNumbers[8]], x, 80)
                                 else
-                                  love.graphics.draw(fontsnumbers[column[1]], x, 38) --Draws seven because there are seven numbers (not eight)
-	                              love.graphics.draw(fontsnumbers[column[2]], x, 45)
-				                  love.graphics.draw(fontsnumbers[column[3]], x, 52)
-					              love.graphics.draw(fontsnumbers[column[4]], x, 59)
-								  love.graphics.draw(fontsnumbers[column[5]], x, 66)
-								  love.graphics.draw(fontsnumbers[column[6]], x, 73)
-								  love.graphics.draw(fontsnumbers[column[7]], x, 80)
+                                  love.graphics.draw(font[referenceNumbers[1]], x, 38) --Draws seven because there are seven numbers (not eight)
+	                              love.graphics.draw(font[referenceNumbers[2]], x, 45)
+				                  love.graphics.draw(font[referenceNumbers[3]], x, 52)
+					              love.graphics.draw(font[referenceNumbers[4]], x, 59)
+								  love.graphics.draw(font[referenceNumbers[5]], x, 66)
+								  love.graphics.draw(font[referenceNumbers[6]], x, 73)
+								  love.graphics.draw(font[referenceNumbers[7]], x, 80)
                                 end
                             else
-                              love.graphics.draw(fontsnumbers[column[1]], x, 45) --Draws six because there are three numbers (not seven)
-	                          love.graphics.draw(fontsnumbers[column[2]], x, 52) 
-				              love.graphics.draw(fontsnumbers[column[3]], x, 59)
-							  love.graphics.draw(fontsnumbers[column[4]], x, 66)
-							  love.graphics.draw(fontsnumbers[column[5]], x, 73)
-							  love.graphics.draw(fontsnumbers[column[6]], x, 80)
+                              love.graphics.draw(font[referenceNumbers[1]], x, 45) --Draws six because there are three numbers (not seven)
+	                          love.graphics.draw(font[referenceNumbers[2]], x, 52) 
+				              love.graphics.draw(font[referenceNumbers[3]], x, 59)
+							  love.graphics.draw(font[referenceNumbers[4]], x, 66)
+							  love.graphics.draw(font[referenceNumbers[5]], x, 73)
+							  love.graphics.draw(font[referenceNumbers[6]], x, 80)
                             end
 		                else
-		                  love.graphics.draw(fontsnumbers[column[1]], x, 52) --Draws five because there are two numbers (not six)
-	                      love.graphics.draw(fontsnumbers[column[2]], x, 59)
-						  love.graphics.draw(fontsnumbers[column[3]], x, 66)
-						  love.graphics.draw(fontsnumbers[column[4]], x, 73)
-						  love.graphics.draw(fontsnumbers[column[5]], x, 80)
+		                  love.graphics.draw(font[referenceNumbers[1]], x, 52) --Draws five because there are two numbers (not six)
+	                      love.graphics.draw(font[referenceNumbers[2]], x, 59)
+						  love.graphics.draw(font[referenceNumbers[3]], x, 66)
+						  love.graphics.draw(font[referenceNumbers[4]], x, 73)
+						  love.graphics.draw(font[referenceNumbers[5]], x, 80)
 		                end 
                     else
-                      love.graphics.draw(fontsnumbers[column[1]], x, 59) --Draws four because there are four numbers (not five)
-	                  love.graphics.draw(fontsnumbers[column[2]], x, 66)
-				      love.graphics.draw(fontsnumbers[column[3]], x, 73)
-					  love.graphics.draw(fontsnumbers[column[4]], x, 80)
+                      love.graphics.draw(font[referenceNumbers[1]], x, 59) --Draws four because there are four numbers (not five)
+	                  love.graphics.draw(font[referenceNumbers[2]], x, 66)
+				      love.graphics.draw(font[referenceNumbers[3]], x, 73)
+					  love.graphics.draw(font[referenceNumbers[4]], x, 80)
 
                     end
                 else
-                  love.graphics.draw(fontsnumbers[column[1]], x, 66) --Draws three because there are three numbers (not four)
-	              love.graphics.draw(fontsnumbers[column[2]], x, 73) 
-				  love.graphics.draw(fontsnumbers[column[3]], x, 80)
+                  love.graphics.draw(font[referenceNumbers[1]], x, 66) --Draws three because there are three numbers (not four)
+	              love.graphics.draw(font[referenceNumbers[2]], x, 73) 
+				  love.graphics.draw(font[referenceNumbers[3]], x, 80)
                 end
 		    else
-		      love.graphics.draw(fontsnumbers[column[1]], x, 73) --Draws two because there are two numbers (not three)
-	          love.graphics.draw(fontsnumbers[column[2]], x, 80)
+		      love.graphics.draw(font[referenceNumbers[1]], x, 73) --Draws two because there are two numbers (not three)
+	          love.graphics.draw(font[referenceNumbers[2]], x, 80)
 		    end
         else
-          love.graphics.draw(fontsnumbers[column[1]], x, 80) --Draws one because there is only one number (not two)
+          love.graphics.draw(font[referenceNumbers[1]], x, 80) --Draws one because there is only one number (not two)
         end
     else
-	  love.graphics.draw(fontsnumbers[16], x, 80) --Draws a 0 because there aren't any numbers
+	  love.graphics.draw(fontsgnumbers[16], x, 80) --Draws a 0 because there aren't any numbers
 	end
 	
 end

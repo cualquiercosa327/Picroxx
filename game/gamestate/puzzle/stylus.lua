@@ -468,16 +468,25 @@ function input.checkcellpress(x1, x2, y1, y2, line, iline, cell)
 		
 	    if iline[cell] == "O" then
 		    if line[cell] == "." then
+              currentRow = line
+	    	  currentCell = cell
+
 	          line[cell] = "O"
 			  sfx.mark:play()
 		      checkcompleted()
 		    elseif line[cell] == "X" then
+              currentRow = line
+	    	  currentCell = cell
+
 	          line[cell] = "."
 			  sfx.erase:play()
 	        end
 	    elseif iline[cell] == "." then
 		  
 		  if line[cell] == "." then
+            currentRow = line
+	    	currentCell = cell
+
 		  	canMark = false
 		    mistake.pop()
 		    mistake.x = x1 - 9
@@ -486,6 +495,9 @@ function input.checkcellpress(x1, x2, y1, y2, line, iline, cell)
 	        line[cell] = "X"
 			sfx.mistake:play()
 		  elseif line[cell] == "X" then
+            currentRow = line
+	    	currentCell = cell
+
 		  	canMark = false
 	        line[cell] = "."
 			sfx.erase:play()
@@ -541,10 +553,10 @@ function input.checkcellpress(x1, x2, y1, y2, line, iline, cell)
 			  sfx.Xmark:play()
 		  end	
 		end
-
 	  end
-
 	end
+
+	updateGridStatus()
   end
 end
 
@@ -675,9 +687,34 @@ function checkcompleted()
 	
 end
 
+function updateGridStatus()
+
+    local index = 1
+
+    for i=1, 15 do 
+        if currentRow == _G["row"..i] then 
+            index = i 
+            break 
+        end
+    end
+
+    if comparetables(_G["row"..index], _G["irow"..index]) == true then
+    	completedRows[index] = 1
+    else
+    	completedRows[index] = 0
+    end
+
+    if checkcolumn(currentCell) == true then
+    	completedColumns[currentCell] = 1
+    else
+    	completedColumns[currentCell] = 0
+    end
+
+end
+
 function comparetables(row, irow)
 
-  local count = 0
+    local count = 0
 
     for i=1, #row do
         if row[i] == irow[i] then
@@ -691,5 +728,26 @@ function comparetables(row, irow)
     end
   
   if count == #row then return true else return false end
+
+end
+
+function checkcolumn(index)
+
+	local column = _G["icolumn"..index]
+
+	local count = 0
+
+	for i=1, leveldata.gridsize do
+        if _G["row"..i][index] == column[i] then
+	      count = count + 1
+	    elseif _G["row"..i][index] ~= column[i] then
+	        if _G["row"..i][index] == "X" and column[i] == "." then
+	          count = count + 1
+	        end
+	  
+	    end
+    end
+
+    if count == leveldata.gridsize then return true else return false end
 
 end

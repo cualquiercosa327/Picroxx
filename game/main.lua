@@ -78,10 +78,12 @@ function mainmenu:enter()
     
     init.menugraphics()
 
-    bgmtitle = love.audio.newSource("bgm/title.wav")
-    bgmtitle:setLooping(true)
-    bgmtitle:setVolume(0.75)
-    bgmtitle:play()
+    if bgmtitle == nil then
+        bgmtitle = love.audio.newSource("bgm/title.wav")
+        bgmtitle:setLooping(true)
+        bgmtitle:setVolume(0.75)
+        bgmtitle:play()
+    end
 
     animation.buttonsenter()
 
@@ -157,6 +159,13 @@ function levelselect:enter(from, course)
    
     level1a.hover = true
 
+    if bgmtitle == nil then
+		bgmtitle = love.audio.newSource("bgm/title.wav")
+        bgmtitle:setLooping(true)
+        bgmtitle:setVolume(0.75)
+        bgmtitle:play()
+	end
+
 end
 
 function levelselect:draw()
@@ -193,11 +202,6 @@ function levelselect:mousepressed(key)
 end
 
 function levelselect:leave()
-
-    bgmtitle:stop()
-
-    bgmtitle = nil
-    collectgarbage()
 
     unload.levelselectgraphics()
     levelselectcleanup8x4()
@@ -251,7 +255,6 @@ function puzzle:enter(from, level, gs, button)
     bgmjazz:setLooping(true)
     bgmjazz:setVolume(0.75)
     bgmjazz:play()
-
 end
 
 function puzzle:draw()

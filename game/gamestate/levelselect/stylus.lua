@@ -94,6 +94,11 @@ function input.checklevelpress(x1, x2, y1, y2, level, levelstring)
 
   if mousex >= x1 and mousex <= x2 and mousey >= y1 and mousey <= y2 then
     if level.hover == true then
+       bgmtitle:stop()
+
+       bgmtitle = nil
+       collectgarbage()
+
 	   Gamestate.switch(puzzle, levelhovered.file, levelhovered.size, levelstring)
 	else
 	   if gridformat == "8x4" then input.clearhover8x4() end

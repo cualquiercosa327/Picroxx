@@ -40,17 +40,17 @@ function drawbot.grid5(drawnumbers)
 	
 	if drawnumbers == true then
 	
-	  drawbot.numbersrow5(numbersrow1, 116)    --Draws all the reference numbers for the rows (horiontal)
-      drawbot.numbersrow5(numbersrow2, 130)
-	  drawbot.numbersrow5(numbersrow3, 144)
-	  drawbot.numbersrow5(numbersrow4, 158)
-	  drawbot.numbersrow5(numbersrow5, 172)
+	  drawbot.numbersrow5(1, 116)    --Draws all the reference numbers for the rows (horiontal)
+      drawbot.numbersrow5(2, 130)
+	  drawbot.numbersrow5(3, 144)
+	  drawbot.numbersrow5(4, 158)
+	  drawbot.numbersrow5(5, 172)
 
-	  drawbot.numberscolumn5(numberscolumn1, 181)    --Draws all the reference numbers for the columns (vertical)
-      drawbot.numberscolumn5(numberscolumn2, 195)
-	  drawbot.numberscolumn5(numberscolumn3, 209)
-	  drawbot.numberscolumn5(numberscolumn4, 223)
-	  drawbot.numberscolumn5(numberscolumn5, 237)
+	  drawbot.numberscolumn5(1, 181)    --Draws all the reference numbers for the columns (vertical)
+      drawbot.numberscolumn5(2, 195)
+	  drawbot.numberscolumn5(3, 209)
+	  drawbot.numberscolumn5(4, 223)
+	  drawbot.numberscolumn5(5, 237)
 	
 	end
 	
@@ -118,44 +118,56 @@ function drawbot.grid5(drawnumbers)
 	
 end
 
-function drawbot.numbersrow5(row, y)
+function drawbot.numbersrow5(index, y)
+    
+    local referenceNumbers = _G["numbersrow"..index]
 
-    if row[1] > 0 then
-      if row[2] > 0 then
-	    if row[3] > 0 then
-	      love.graphics.draw(fontnumbers[row[1]], 138, y)
-	      love.graphics.draw(fontnumbers[row[2]], 152, y)
-	      love.graphics.draw(fontnumbers[row[3]], 166, y)  
+    local font = fontnumbers
+
+    if completedRows[index] == 1 then font = fontgnumbers else font = fontnumbers end
+
+    if referenceNumbers[1] > 0 then
+      if referenceNumbers[2] > 0 then
+	    if referenceNumbers[3] > 0 then
+	      love.graphics.draw(font[referenceNumbers[1]], 138, y)
+	      love.graphics.draw(font[referenceNumbers[2]], 152, y)
+	      love.graphics.draw(font[referenceNumbers[3]], 166, y)  
 	    else
-	      love.graphics.draw(fontnumbers[row[1]], 152, y)
-	      love.graphics.draw(fontnumbers[row[2]], 166, y)
+	      love.graphics.draw(font[referenceNumbers[1]], 152, y)
+	      love.graphics.draw(font[referenceNumbers[2]], 166, y)
         end
 	  else
-	    love.graphics.draw(fontnumbers[row[1]], 166, y)
+	    love.graphics.draw(font[referenceNumbers[1]], 166, y)
 	  end
 	else
-	  love.graphics.draw(fontnumbers[16], 166, y)
+	  love.graphics.draw(fontgnumbers[16], 166, y)
 	end
 	
 end
 
-function drawbot.numberscolumn5(column, x)
+function drawbot.numberscolumn5(index, x)
 
-    if column[1] > 0 then
-      if column[2] > 0 then
-	    if column[3] > 0 then
-	      love.graphics.draw(fontnumbers[column[1]], x, 73)
-	      love.graphics.draw(fontnumbers[column[2]], x, 87)
-	      love.graphics.draw(fontnumbers[column[3]], x, 101)  
+    local referenceNumbers = _G["numberscolumn"..index]
+
+    local font = fontnumbers
+
+    if completedColumns[index] == 1 then font = fontgnumbers else font = fontnumbers end
+
+    if referenceNumbers[1] > 0 then
+      if referenceNumbers[2] > 0 then
+	    if referenceNumbers[3] > 0 then
+	      love.graphics.draw(font[referenceNumbers[1]], x, 73)
+	      love.graphics.draw(font[referenceNumbers[2]], x, 87)
+	      love.graphics.draw(font[referenceNumbers[3]], x, 101)  
 	    else
-	      love.graphics.draw(fontnumbers[column[1]], x, 87)
-	      love.graphics.draw(fontnumbers[column[2]], x, 101)
+	      love.graphics.draw(font[referenceNumbers[1]], x, 87)
+	      love.graphics.draw(font[referenceNumbers[2]], x, 101)
         end
 	  else
-	    love.graphics.draw(fontnumbers[column[1]], x, 101)
+	    love.graphics.draw(font[referenceNumbers[1]], x, 101)
 	  end
 	else
-	  love.graphics.draw(fontnumbers[16], x, 101)
+	  love.graphics.draw(fontgnumbers[16], x, 101)
 	end
 	
 end

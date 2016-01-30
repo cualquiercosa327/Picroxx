@@ -223,6 +223,9 @@ function puzzle:enter(from, level, gs, button)
     currentRow = row0
     currentCell = 0
 
+    cellhoverx = nil
+    cellhovery = nil
+
     toptimer.clear()
     
     init.puzzlegraphics() 
@@ -342,6 +345,8 @@ function puzzle:update(dt)
         end
 
     end
+
+    if leveldata.gridsize >= 15 then cellHover:update(dt) end
 	
 end
 

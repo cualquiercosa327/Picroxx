@@ -119,6 +119,10 @@ function init.puzzlegraphics()
 	Xmark = love.graphics.newImage('gfx/puzzle/boards/normal/Xmark.png')
 	smallmark = love.graphics.newImage('gfx/puzzle/boards/normal/smallmark.png')
 	smallXmark = love.graphics.newImage('gfx/puzzle/boards/normal/smallXmark.png')
+
+	local cellhoverA = love.graphics.newImage('gfx/puzzle/boards/normal/cellhover.png')
+	cellHover = newAnimation(cellhoverA, 15, 15, 0.1, 6)
+    cellHover:setMode("loop")
 	
 	twoMin = love.graphics.newImage('gfx/puzzle/gui/2min.png')
 	fourMin = love.graphics.newImage('gfx/puzzle/gui/4min.png')
@@ -299,6 +303,9 @@ function unload.puzzlegraphics()
 	Xmark = nil
 	smallmark = nil
 	smallXmark = nil
+
+	cellhoverA = nil
+	cellHover = nil
 	
 	twoMin = nil
 	fourMin = nil

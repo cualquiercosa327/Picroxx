@@ -244,6 +244,11 @@ function drawbot.cellTranslated(line, cell, x, y)
     if line[cell] == 'X' then
 	  love.graphics.draw(Xmark, gridx + x, gridy + y)
     end		
+
+    if cellhoverx ~= nil and cellhovery ~= nil and cellhoverx == line and cellhovery == cell then
+      cellHover:play()
+      cellHover:draw(gridx + x - 1, gridy + y - 1)
+    end
   
 end
 

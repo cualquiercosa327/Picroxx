@@ -457,11 +457,17 @@ function input.checkcellpress(x1, x2, y1, y2, line, iline, cell)
 	local truey1 = gridy + y1
 	local truey2 = gridy + y2
 	
+    local hotfix = false
+
 	local mousex, mousey = love.mouse.getPosition()
 
   if mousex >= truex1 and mousex <= truex2 and mousey >= truey1 and mousey <= truey2 then
 
   	if currentRow == row0 and currentCell == 0 then currentRow = line currentCell = cell end
+  	if currentRow ~= line and currentCell ~= cell then hotfix = true end
+
+  	cellhoverx = line
+  	cellhovery = cell
     
     if canMark == true then
 	  if markMode == "O" then
@@ -507,7 +513,7 @@ function input.checkcellpress(x1, x2, y1, y2, line, iline, cell)
 	  elseif markMode == "X" then
 
 	    if line[cell] == "X" then
-	      if currentRow ~= line or currentCell ~= cell then
+	      if currentRow ~= line or currentCell ~= cell or hotfix == true then
 	      	if Xmode ~= nil and Xmode == "erase" then
 			    currentRow = line
 	    	    currentCell = cell
@@ -530,7 +536,7 @@ function input.checkcellpress(x1, x2, y1, y2, line, iline, cell)
 			  sfx.erase:play()
 		  end			
 		elseif line[cell] == "." then
-		  if currentRow ~= line or currentCell ~= cell and Xmode == "mark" then
+		  if currentRow ~= line or currentCell ~= cell or hotfix == true and Xmode == "mark" then
 	      	if Xmode ~= nil and Xmode == "mark" then
 			    currentRow = line
 	    	    currentCell = cell

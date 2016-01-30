@@ -1,4 +1,4 @@
-function parseTable(tableToParse, output)
+function parseTable(tableToParse, output) --Thanks andre111 for this one!
     
     local lineLength = 0
     local elementIndex = 1
@@ -24,18 +24,26 @@ end
 
 function parse5x5()
     
+    --Resets this table, used to mark the reference numbers as grey when you're done completing a row or column.
+
     completedRows = {0, 0, 0, 0, 0}
     completedColumns = {0, 0, 0, 0, 0}
+
+    --Cleans the tables for the reference numbers.
 
     for i=1, 5 do
         _G["numbersrow"..i] = {0, 0, 0}
         _G["numberscolumn"..i] = {0, 0, 0}
     end
   
+    --Parses the rows of the level.
+
     for i=1, 5 do
         parseTable(_G["irow"..i], _G["numbersrow"..i])
     end
-  
+    
+    --Sets up the columns, so they can be parsed later.
+
     local once = true
 
     for i=1, 5 do
@@ -52,10 +60,14 @@ function parse5x5()
 
         once = false
     end 
+    
+    --Parses the columns.
 
     for i=1, 5 do
         parseTable(_G["icolumn"..i], _G["numberscolumn"..i])
     end
+
+    --Checks if any rows or columns are empty, and fills those with Xs.
 
     checkEmptyRows(5)
     checkEmptyColumns(5)
@@ -64,7 +76,7 @@ end
 
 function parse10x10()
     
-    --Resets this table, used to mark the reference numbers as grey when you're done completing a row.
+    --Resets this table, used to mark the reference numbers as grey when you're done completing a row or column.
 
     completedRows = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
     completedColumns = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
@@ -82,7 +94,7 @@ function parse10x10()
         parseTable(_G["irow"..i], _G["numbersrow"..i])
     end
   
-    --Sets up the colums, so they can be parsed later.
+    --Sets up the columns, so they can be parsed later.
 
     local once = true
 
@@ -107,25 +119,35 @@ function parse10x10()
         parseTable(_G["icolumn"..i], _G["numberscolumn"..i])
     end
 
+    --Checks if any rows or columns are empty, and fills those with Xs.
+
     checkEmptyRows(10)
     checkEmptyColumns(10)
 
 end
 
 function parse15x15()
+
+    --Resets this table, used to mark the reference numbers as grey when you're done completing a row or column.
     
     completedRows = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
     completedColumns = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+
+    --Cleans the tables for the reference numbers.
 
     for i=1, 15 do
         _G["numbersrow"..i] = {0, 0, 0, 0, 0, 0, 0, 0}
         _G["numberscolumn"..i] = {0, 0, 0, 0, 0, 0, 0, 0}
     end
   
+    --Parses the rows of the level.
+
     for i=1, 15 do
         parseTable(_G["irow"..i], _G["numbersrow"..i])
     end
-  
+    
+    --Sets up the columns, so they can be parsed later.
+
     local once = true
 
     for i=1, 15 do
@@ -143,9 +165,13 @@ function parse15x15()
         once = false
     end 
 
+    --Parses the columns.
+
     for i=1, 15 do
         parseTable(_G["icolumn"..i], _G["numberscolumn"..i])
     end
+
+    --Checks if any rows or columns are empty, and fills those with Xs.
     
     checkEmptyRows(15)
     checkEmptyColumns(15)

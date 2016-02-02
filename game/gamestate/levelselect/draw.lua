@@ -73,6 +73,10 @@ function drawtop.levelselect()
    if levelhovered.completed == true and levelhovered.size == "15x15" then love.graphics.draw(levelhovered.splash, 103, 72, 0, 6, 6) end
    
    if levelhovered.completed == false then love.graphics.draw(uncompleted, 118, 87) end
+
+   if coursegamemode == "easy" then love.graphics.draw(easyoverlayl, 0, 0) end
+   if coursegamemode == "normal" then love.graphics.draw(normaloverlayl, 0, 0) end 
+   if coursegamemode == "free" then love.graphics.draw(freeoverlayl, 0, 0) end 
    
 end
 

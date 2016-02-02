@@ -93,6 +93,10 @@ function init.levelselectgraphics()
 
 	skinbuttonNormal = love.graphics.newImage("gfx/puzzle/boards/normal/skinbutton.png")
 	skinbuttonCustom = love.graphics.newImage(customSkinPath.."skinbutton.png")
+
+	easyoverlayl = love.graphics.newImage("gfx/levelselect/easy.png")
+	normaloverlayl = love.graphics.newImage("gfx/levelselect/normal.png")
+	freeoverlayl = love.graphics.newImage("gfx/levelselect/free.png")
 	
 	icon = {}
 	
@@ -391,6 +395,10 @@ function unload.levelselectgraphics()
 
 	skinbuttonNormal = nil
 	skinbuttonCustom = nil
+
+	easyoverlayl = nil
+	normaloverlayl = nil
+	freeoverlayl = nil
 	
     i5x5label = nil
 	i10x10label = nil

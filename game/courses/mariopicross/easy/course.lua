@@ -1,6 +1,7 @@
 gridformat = "8x4"
 savefile = "courses/mariopicross/easy/save.lua"
 customSkinPath = "gfx/puzzle/boards/egypt/"
+coursegamemode = "easy"
 
 --First row of puzzles
 

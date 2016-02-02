@@ -118,7 +118,7 @@ function mainmenu:mousepressed(key)
 	input.checkbuttonpress(button5)
 	input.checkbuttonpress(button6)
 
-	input.checkbackbuttonpress()
+	if menusubmenu ~= "mainmenu" then input.checkbackbuttonpress() end
 	
 end
 
@@ -198,7 +198,6 @@ function levelselect:mousepressed(key)
     input.checklevelgridpress()
     input.checkhalfselectorpress()
 
-
 end
 
 function levelselect:leave()
@@ -268,6 +267,7 @@ function puzzle:draw()
 	        drawtop.ingame()
 	    elseif zoomed == true then
 	        drawtop.ingamezoomed()
+            drawtop.markers()
 	    end
 	
     love.graphics.setScreen('bottom')
@@ -346,7 +346,7 @@ function puzzle:update(dt)
 
     end
 
-    if leveldata.gridsize >= 15 then cellHover:update(dt) end
+    if leveldata.gridsize >= 15 then cellHover:update(dt) cellHoverTop:update(dt) end
 	
 end
 

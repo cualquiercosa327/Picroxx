@@ -66,7 +66,7 @@ function drawtop.ingamezoomed()
 	love.graphics.setColor(148, 148, 173)
 	love.graphics.setFont(squarefont)
 	love.graphics.print(leveldata.number, 89, 2)
-	love.graphics.print(leveldata.letter, 112, 2)
+	love.graphics.print(tostring(love.timer.getFPS()), 112, 2)
 	love.graphics.setColor(255, 255, 255)
 	
 end
@@ -244,11 +244,6 @@ function drawbot.cellTranslated(line, cell, x, y)
     if line[cell] == 'X' then
 	  love.graphics.draw(Xmark, gridx + x, gridy + y)
     end		
-
-    if cellhoverx ~= nil and cellhovery ~= nil and cellhoverx == line and cellhovery == cell then
-      cellHover:play()
-      cellHover:draw(gridx + x - 1, gridy + y - 1)
-    end
   
 end
 
@@ -262,4 +257,67 @@ function drawbot.smallcell(line, cell, x, y)
 	  love.graphics.draw(smallXmark, x, y)
     end		
   
+end
+
+function drawbot.cellHover()
+
+	local row = 0
+
+	if cellhoverx == row1 then row = 1 end
+	if cellhoverx == row2 then row = 2 end
+	if cellhoverx == row3 then row = 3 end
+	if cellhoverx == row4 then row = 4 end
+	if cellhoverx == row5 then row = 5 end
+
+	if cellhoverx == row6 then row = 6 end
+	if cellhoverx == row7 then row = 7 end
+	if cellhoverx == row8 then row = 8 end
+	if cellhoverx == row9 then row = 9 end
+	if cellhoverx == row10 then row = 10 end
+
+	if cellhoverx == row11 then row = 11 end
+	if cellhoverx == row12 then row = 12 end
+	if cellhoverx == row13 then row = 13 end
+	if cellhoverx == row14 then row = 14 end
+	if cellhoverx == row15 then row = 15 end
+
+	cellHover:play()
+    cellHover:draw(gridx + 138 + 14 * currentCell, gridy + 77 + 14 * row)
+
+end
+
+function drawtop.markers()
+
+	local row = 0
+
+   	if cellhoverx == row1 then row = 1 end
+	if cellhoverx == row2 then row = 2 end
+	if cellhoverx == row3 then row = 3 end
+	if cellhoverx == row4 then row = 4 end
+	if cellhoverx == row5 then row = 5 end
+
+	if cellhoverx == row6 then row = 6 end
+	if cellhoverx == row7 then row = 7 end
+	if cellhoverx == row8 then row = 8 end
+	if cellhoverx == row9 then row = 9 end
+	if cellhoverx == row10 then row = 10 end
+
+	if cellhoverx == row11 then row = 11 end
+	if cellhoverx == row12 then row = 12 end
+	if cellhoverx == row13 then row = 13 end
+	if cellhoverx == row14 then row = 14 end
+	if cellhoverx == row15 then row = 15 end
+    
+    if cellhoverx ~= row0 and cellhovery ~= 0 then
+
+	   love.graphics.setColor(255, 255, 255, 128)
+       love.graphics.draw(markedrow, 0, 80 + 8 * row)
+       love.graphics.draw(markedcolumn, 160 + 8 * currentCell, 0)
+       love.graphics.setColor(255, 255, 255, 255)
+    
+       cellHoverTop:play()
+       cellHoverTop:draw(155 + 8 * currentCell, 75 + 8 * row)
+
+    end
+
 end

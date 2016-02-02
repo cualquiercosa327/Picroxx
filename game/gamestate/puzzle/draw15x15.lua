@@ -558,6 +558,8 @@ function drawbot.grid15(drawnumbers)
 	  love.graphics.draw(eightMin, gridx + mistake.x, gridy + mistake.y - mistake.speed) 
 	  love.graphics.setColor(255, 255, 255, 255)
 	end  	
+
+  if cellhoverx ~= row0 and cellhovery ~= 0 then drawbot.cellHover() end
 	
 end
 

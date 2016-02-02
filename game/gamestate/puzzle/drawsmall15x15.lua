@@ -4,21 +4,21 @@ function drawtop.smallgrid15(drawnumbers)
 	
 	if drawnumbers == true then
 	
-	  drawbot.smallnumbersrow15(1, 40, 88)    --Draws all the reference numbers for the rows (horiontal)
-      drawbot.smallnumbersrow15(2, 40, 96)
-	  drawbot.smallnumbersrow15(3, 40, 104)
-	  drawbot.smallnumbersrow15(4, 40, 112)
-	  drawbot.smallnumbersrow15(5, 40, 120)
-	  drawbot.smallnumbersrow15(6, 40, 128)
-	  drawbot.smallnumbersrow15(7, 40, 136)
-	  drawbot.smallnumbersrow15(8, 40, 144)
-	  drawbot.smallnumbersrow15(9, 40, 152)
-	  drawbot.smallnumbersrow15(10, 40, 160)
-	  drawbot.smallnumbersrow15(11, 40, 168)
-	  drawbot.smallnumbersrow15(12, 40, 176)
-	  drawbot.smallnumbersrow15(13, 40, 184)
-	  drawbot.smallnumbersrow15(14, 40, 192)
-	  drawbot.smallnumbersrow15(15, 40, 200)
+	  drawbot.smallnumbersrow15(1, 40, 88, 96)    --Draws all the reference numbers for the rows (horiontal)
+      drawbot.smallnumbersrow15(2, 40, 96, 104)
+	  drawbot.smallnumbersrow15(3, 40, 104, 112)
+	  drawbot.smallnumbersrow15(4, 40, 112, 120)
+	  drawbot.smallnumbersrow15(5, 40, 120, 128)
+	  drawbot.smallnumbersrow15(6, 40, 128, 136)
+	  drawbot.smallnumbersrow15(7, 40, 136, 144)
+	  drawbot.smallnumbersrow15(8, 40, 144, 152)
+	  drawbot.smallnumbersrow15(9, 40, 152, 160)
+	  drawbot.smallnumbersrow15(10, 40, 160, 168)
+	  drawbot.smallnumbersrow15(11, 40, 168, 176)
+	  drawbot.smallnumbersrow15(12, 40, 176, 184)
+	  drawbot.smallnumbersrow15(13, 40, 184, 192)
+	  drawbot.smallnumbersrow15(14, 40, 192, 200)
+	  drawbot.smallnumbersrow15(15, 40, 200, 208)
 	
 	  drawbot.smallnumberscolumn15(1, 168)    --Draws all the reference numbers for the columns (vertical)
       drawbot.smallnumberscolumn15(2, 176)
@@ -578,7 +578,7 @@ function drawbot.smallgrid15(drawnumbers)
 
 end
 
-function drawbot.smallnumbersrow15(index, offset, y) --Used to draw the reference numbers of a row
+function drawbot.smallnumbersrow15(index, offset, y, y2) --Used to draw the reference numbers of a row
 
 	local referenceNumbers = _G["numbersrow"..index]
 

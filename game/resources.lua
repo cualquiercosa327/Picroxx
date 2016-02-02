@@ -123,6 +123,13 @@ function init.puzzlegraphics()
 	local cellhoverA = love.graphics.newImage('gfx/puzzle/boards/normal/cellhover.png')
 	cellHover = newAnimation(cellhoverA, 15, 15, 0.1, 6)
     cellHover:setMode("loop")
+
+    local cellhovertopA = love.graphics.newImage('gfx/puzzle/gui/cellhovertop.png')
+	cellHoverTop = newAnimation(cellhovertopA, 17, 17, 0.1, 6)
+    cellHoverTop:setMode("loop")
+
+    markedrow = love.graphics.newImage('gfx/puzzle/boards/normal/markedrow.png')
+	markedcolumn = love.graphics.newImage('gfx/puzzle/boards/normal/markedcolumn.png')
 	
 	twoMin = love.graphics.newImage('gfx/puzzle/gui/2min.png')
 	fourMin = love.graphics.newImage('gfx/puzzle/gui/4min.png')
@@ -306,6 +313,12 @@ function unload.puzzlegraphics()
 
 	cellhoverA = nil
 	cellHover = nil
+
+	cellhovertopA = nil
+	cellHoverTop = nil
+
+	markedrow = nil
+	markedcolumn = nil
 	
 	twoMin = nil
 	fourMin = nil

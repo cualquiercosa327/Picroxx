@@ -23,165 +23,91 @@ function savedata.write()
 
  local savegame = io.open(savefile, "w")
  
- --Booleans are not strings.
- 
- local level1aS if level1a.completed == true then level1aS = "true" else level1aS = "false" end
- local level1bS if level1b.completed == true then level1bS = "true" else level1bS = "false" end
- local level1cS if level1c.completed == true then level1cS = "true" else level1cS = "false" end
- local level1dS if level1d.completed == true then level1dS = "true" else level1dS = "false" end
- local level1eS if level1e.completed == true then level1eS = "true" else level1eS = "false" end
- local level1fS if level1f.completed == true then level1fS = "true" else level1fS = "false" end
- local level1gS if level1g.completed == true then level1gS = "true" else level1gS = "false" end
- local level1hS if level1h.completed == true then level1hS = "true" else level1hS = "false" end
-
- local level2aS if level2a.completed == true then level2aS = "true" else level2aS = "false" end
- local level2bS if level2b.completed == true then level2bS = "true" else level2bS = "false" end
- local level2cS if level2c.completed == true then level2cS = "true" else level2cS = "false" end
- local level2dS if level2d.completed == true then level2dS = "true" else level2dS = "false" end
- local level2eS if level2e.completed == true then level2eS = "true" else level2eS = "false" end
- local level2fS if level2f.completed == true then level2fS = "true" else level2fS = "false" end
- local level2gS if level2g.completed == true then level2gS = "true" else level2gS = "false" end
- local level2hS if level2h.completed == true then level2hS = "true" else level2hS = "false" end
-
- local level3aS if level3a.completed == true then level3aS = "true" else level3aS = "false" end
- local level3bS if level3b.completed == true then level3bS = "true" else level3bS = "false" end
- local level3cS if level3c.completed == true then level3cS = "true" else level3cS = "false" end
- local level3dS if level3d.completed == true then level3dS = "true" else level3dS = "false" end
- local level3eS if level3e.completed == true then level3eS = "true" else level3eS = "false" end
- local level3fS if level3f.completed == true then level3fS = "true" else level3fS = "false" end
- local level3gS if level3g.completed == true then level3gS = "true" else level3gS = "false" end
- local level3hS if level3h.completed == true then level3hS = "true" else level3hS = "false" end
-
- local level4aS if level4a.completed == true then level4aS = "true" else level4aS = "false" end
- local level4bS if level4b.completed == true then level4bS = "true" else level4bS = "false" end
- local level4cS if level4c.completed == true then level4cS = "true" else level4cS = "false" end
- local level4dS if level4d.completed == true then level4dS = "true" else level4dS = "false" end
- local level4eS if level4e.completed == true then level4eS = "true" else level4eS = "false" end
- local level4fS if level4f.completed == true then level4fS = "true" else level4fS = "false" end
- local level4gS if level4g.completed == true then level4gS = "true" else level4gS = "false" end
- local level4hS if level4h.completed == true then level4hS = "true" else level4hS = "false" end
-
- local level5aS if level5a.completed == true then level5aS = "true" else level5aS = "false" end
- local level5bS if level5b.completed == true then level5bS = "true" else level5bS = "false" end
- local level5cS if level5c.completed == true then level5cS = "true" else level5cS = "false" end
- local level5dS if level5d.completed == true then level5dS = "true" else level5dS = "false" end
- local level5eS if level5e.completed == true then level5eS = "true" else level5eS = "false" end
- local level5fS if level5f.completed == true then level5fS = "true" else level5fS = "false" end
- local level5gS if level5g.completed == true then level5gS = "true" else level5gS = "false" end
- local level5hS if level5h.completed == true then level5hS = "true" else level5hS = "false" end
-
- local level6aS if level6a.completed == true then level6aS = "true" else level6aS = "false" end
- local level6bS if level6b.completed == true then level6bS = "true" else level6bS = "false" end
- local level6cS if level6c.completed == true then level6cS = "true" else level6cS = "false" end
- local level6dS if level6d.completed == true then level6dS = "true" else level6dS = "false" end
- local level6eS if level6e.completed == true then level6eS = "true" else level6eS = "false" end
- local level6fS if level6f.completed == true then level6fS = "true" else level6fS = "false" end
- local level6gS if level6g.completed == true then level6gS = "true" else level6gS = "false" end
- local level6hS if level6h.completed == true then level6hS = "true" else level6hS = "false" end
-
- local level7aS if level7a.completed == true then level7aS = "true" else level7aS = "false" end
- local level7bS if level7b.completed == true then level7bS = "true" else level7bS = "false" end
- local level7cS if level7c.completed == true then level7cS = "true" else level7cS = "false" end
- local level7dS if level7d.completed == true then level7dS = "true" else level7dS = "false" end
- local level7eS if level7e.completed == true then level7eS = "true" else level7eS = "false" end
- local level7fS if level7f.completed == true then level7fS = "true" else level7fS = "false" end
- local level7gS if level7g.completed == true then level7gS = "true" else level7gS = "false" end
- local level7hS if level7h.completed == true then level7hS = "true" else level7hS = "false" end
-
- local level8aS if level8a.completed == true then level8aS = "true" else level8aS = "false" end
- local level8bS if level8b.completed == true then level8bS = "true" else level8bS = "false" end
- local level8cS if level8c.completed == true then level8cS = "true" else level8cS = "false" end
- local level8dS if level8d.completed == true then level8dS = "true" else level8dS = "false" end
- local level8eS if level8e.completed == true then level8eS = "true" else level8eS = "false" end
- local level8fS if level8f.completed == true then level8fS = "true" else level8fS = "false" end
- local level8gS if level8g.completed == true then level8gS = "true" else level8gS = "false" end
- local level8hS if level8h.completed == true then level8hS = "true" else level8hS = "false" end
- 
- savegame:write("level1a.completed = "..level1aS, "\n")
- savegame:write("level1b.completed = "..level1bS, "\n")
- savegame:write("level1c.completed = "..level1cS, "\n")
- savegame:write("level1d.completed = "..level1dS, "\n")
- savegame:write("level1e.completed = "..level1eS, "\n")
- savegame:write("level1f.completed = "..level1fS, "\n")
- savegame:write("level1g.completed = "..level1gS, "\n")
- savegame:write("level1h.completed = "..level1hS, "\n")
+ savegame:write("level1a.completed = "..tostring(level1a.completed), "\n")
+ savegame:write("level1b.completed = "..tostring(level1b.completed), "\n")
+ savegame:write("level1c.completed = "..tostring(level1c.completed), "\n")
+ savegame:write("level1d.completed = "..tostring(level1d.completed), "\n")
+ savegame:write("level1e.completed = "..tostring(level1e.completed), "\n")
+ savegame:write("level1f.completed = "..tostring(level1f.completed), "\n")
+ savegame:write("level1g.completed = "..tostring(level1g.completed), "\n")
+ savegame:write("level1h.completed = "..tostring(level1h.completed), "\n")
 
  savegame:write("", "\n")
 
- savegame:write("level2a.completed = "..level2aS, "\n")
- savegame:write("level2b.completed = "..level2bS, "\n")
- savegame:write("level2c.completed = "..level2cS, "\n")
- savegame:write("level2d.completed = "..level2dS, "\n")
- savegame:write("level2e.completed = "..level2eS, "\n")
- savegame:write("level2f.completed = "..level2fS, "\n")
- savegame:write("level2g.completed = "..level2gS, "\n")
- savegame:write("level2h.completed = "..level2hS, "\n")
+ savegame:write("level2a.completed = "..tostring(level2a.completed), "\n")
+ savegame:write("level2b.completed = "..tostring(level2b.completed), "\n")
+ savegame:write("level2c.completed = "..tostring(level2c.completed), "\n")
+ savegame:write("level2d.completed = "..tostring(level2d.completed), "\n")
+ savegame:write("level2e.completed = "..tostring(level2e.completed), "\n")
+ savegame:write("level2f.completed = "..tostring(level2f.completed), "\n")
+ savegame:write("level2g.completed = "..tostring(level2g.completed), "\n")
+ savegame:write("level2h.completed = "..tostring(level2h.completed), "\n")
 
  savegame:write("", "\n")
 
- savegame:write("level3a.completed = "..level3aS, "\n")
- savegame:write("level3b.completed = "..level3bS, "\n")
- savegame:write("level3c.completed = "..level3cS, "\n")
- savegame:write("level3d.completed = "..level3dS, "\n")
- savegame:write("level3e.completed = "..level3eS, "\n")
- savegame:write("level3f.completed = "..level3fS, "\n")
- savegame:write("level3g.completed = "..level3gS, "\n")
- savegame:write("level3h.completed = "..level3hS, "\n")
+ savegame:write("level3a.completed = "..tostring(level3a.completed), "\n")
+ savegame:write("level3b.completed = "..tostring(level3b.completed), "\n")
+ savegame:write("level3c.completed = "..tostring(level3c.completed), "\n")
+ savegame:write("level3d.completed = "..tostring(level3d.completed), "\n")
+ savegame:write("level3e.completed = "..tostring(level3e.completed), "\n")
+ savegame:write("level3f.completed = "..tostring(level3f.completed), "\n")
+ savegame:write("level3g.completed = "..tostring(level3g.completed), "\n")
+ savegame:write("level3h.completed = "..tostring(level3h.completed), "\n")
 
  savegame:write("", "\n")
 
- savegame:write("level4a.completed = "..level4aS, "\n")
- savegame:write("level4b.completed = "..level4bS, "\n")
- savegame:write("level4c.completed = "..level4cS, "\n")
- savegame:write("level4d.completed = "..level4dS, "\n")
- savegame:write("level4e.completed = "..level4eS, "\n")
- savegame:write("level4f.completed = "..level4fS, "\n")
- savegame:write("level4g.completed = "..level4gS, "\n")
- savegame:write("level4h.completed = "..level4hS, "\n")
+ savegame:write("level4a.completed = "..tostring(level4a.completed), "\n")
+ savegame:write("level4b.completed = "..tostring(level4b.completed), "\n")
+ savegame:write("level4c.completed = "..tostring(level4c.completed), "\n")
+ savegame:write("level4d.completed = "..tostring(level4d.completed), "\n")
+ savegame:write("level4e.completed = "..tostring(level4e.completed), "\n")
+ savegame:write("level4f.completed = "..tostring(level4f.completed), "\n")
+ savegame:write("level4g.completed = "..tostring(level4g.completed), "\n")
+ savegame:write("level4h.completed = "..tostring(level4h.completed), "\n")
  
  savegame:write("", "\n")
 
- savegame:write("level5a.completed = "..level5aS, "\n")
- savegame:write("level5b.completed = "..level5bS, "\n")
- savegame:write("level5c.completed = "..level5cS, "\n")
- savegame:write("level5d.completed = "..level5dS, "\n")
- savegame:write("level5e.completed = "..level5eS, "\n")
- savegame:write("level5f.completed = "..level5fS, "\n")
- savegame:write("level5g.completed = "..level5gS, "\n")
- savegame:write("level5h.completed = "..level5hS, "\n")
+ savegame:write("level5a.completed = "..tostring(level5a.completed), "\n")
+ savegame:write("level5b.completed = "..tostring(level5b.completed), "\n")
+ savegame:write("level5c.completed = "..tostring(level5c.completed), "\n")
+ savegame:write("level5d.completed = "..tostring(level5d.completed), "\n")
+ savegame:write("level5e.completed = "..tostring(level5e.completed), "\n")
+ savegame:write("level5f.completed = "..tostring(level5f.completed), "\n")
+ savegame:write("level5g.completed = "..tostring(level5g.completed), "\n")
+ savegame:write("level5h.completed = "..tostring(level5h.completed), "\n")
 
  savegame:write("", "\n")
 
- savegame:write("level6a.completed = "..level6aS, "\n")
- savegame:write("level6b.completed = "..level6bS, "\n")
- savegame:write("level6c.completed = "..level6cS, "\n")
- savegame:write("level6d.completed = "..level6dS, "\n")
- savegame:write("level6e.completed = "..level6eS, "\n")
- savegame:write("level6f.completed = "..level6fS, "\n")
- savegame:write("level6g.completed = "..level6gS, "\n")
- savegame:write("level6h.completed = "..level6hS, "\n")
+ savegame:write("level6a.completed = "..tostring(level6a.completed), "\n")
+ savegame:write("level6b.completed = "..tostring(level6b.completed), "\n")
+ savegame:write("level6c.completed = "..tostring(level6c.completed), "\n")
+ savegame:write("level6d.completed = "..tostring(level6d.completed), "\n")
+ savegame:write("level6e.completed = "..tostring(level6e.completed), "\n")
+ savegame:write("level6f.completed = "..tostring(level6f.completed), "\n")
+ savegame:write("level6g.completed = "..tostring(level6g.completed), "\n")
+ savegame:write("level6h.completed = "..tostring(level6h.completed), "\n")
 
  savegame:write("", "\n")
 
- savegame:write("level7a.completed = "..level7aS, "\n")
- savegame:write("level7b.completed = "..level7bS, "\n")
- savegame:write("level7c.completed = "..level7cS, "\n")
- savegame:write("level7d.completed = "..level7dS, "\n")
- savegame:write("level7e.completed = "..level7eS, "\n")
- savegame:write("level7f.completed = "..level7fS, "\n")
- savegame:write("level7g.completed = "..level7gS, "\n")
- savegame:write("level7h.completed = "..level7hS, "\n")
+ savegame:write("level7a.completed = "..tostring(level7a.completed), "\n")
+ savegame:write("level7b.completed = "..tostring(level7b.completed), "\n")
+ savegame:write("level7c.completed = "..tostring(level7c.completed), "\n")
+ savegame:write("level7d.completed = "..tostring(level7d.completed), "\n")
+ savegame:write("level7e.completed = "..tostring(level7e.completed), "\n")
+ savegame:write("level7f.completed = "..tostring(level7f.completed), "\n")
+ savegame:write("level7g.completed = "..tostring(level7g.completed), "\n")
+ savegame:write("level7h.completed = "..tostring(level7h.completed), "\n")
 
  savegame:write("", "\n")
 
- savegame:write("level8a.completed = "..level8aS, "\n")
- savegame:write("level8b.completed = "..level8bS, "\n")
- savegame:write("level8c.completed = "..level8cS, "\n")
- savegame:write("level8d.completed = "..level8dS, "\n")
- savegame:write("level8e.completed = "..level8eS, "\n")
- savegame:write("level8f.completed = "..level8fS, "\n")
- savegame:write("level8g.completed = "..level8gS, "\n")
- savegame:write("level8h.completed = "..level8hS, "\n")
+ savegame:write("level8a.completed = "..tostring(level8a.completed), "\n")
+ savegame:write("level8b.completed = "..tostring(level8b.completed), "\n")
+ savegame:write("level8c.completed = "..tostring(level8c.completed), "\n")
+ savegame:write("level8d.completed = "..tostring(level8d.completed), "\n")
+ savegame:write("level8e.completed = "..tostring(level8e.completed), "\n")
+ savegame:write("level8f.completed = "..tostring(level8f.completed), "\n")
+ savegame:write("level8g.completed = "..tostring(level8g.completed), "\n")
+ savegame:write("level8h.completed = "..tostring(level8h.completed), "\n")
 
  io.close(savegame)
 

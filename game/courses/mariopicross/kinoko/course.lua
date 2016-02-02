@@ -1,5 +1,6 @@
 gridformat = "8x4"
 savefile = "courses/mariopicross/kinoko/save.lua"
+customSkinPath = "gfx/puzzle/boards/egypt/"
 
 --First row of puzzles
 

@@ -163,6 +163,22 @@ function input.checkhalfselectorpress()
 
 end
 
+function input.checkskinbuttonpress()
+
+    local mousex, mousey = love.mouse.getPosition()
+
+    if mousex >= 296 and mousex <= 314 and mousey >= 7 and mousey <= 25 then
+       
+        if skinPath == "gfx/puzzle/boards/normal/" then
+        	skinPath = customSkinPath
+        else
+        	skinPath = "gfx/puzzle/boards/normal/"
+        end
+
+    end
+
+end
+
 function input.clearhover8x4()
 
 	level1a.hover = false

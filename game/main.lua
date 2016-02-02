@@ -129,13 +129,15 @@ function mainmenu:leave()
 end
 
 function levelselect:enter(from, course)
-   
-    init.levelselectgraphics()
     
     lastCourse = course
 
     if from == mainmenu then dofile(course) end
     if from == puzzle then dofile(lastCourse) end
+
+    if skinPath == nil then skinPath = "gfx/puzzle/boards/normal/" end
+    
+    init.levelselectgraphics()
 	 
     savedata.read()
     savedata.write()
@@ -197,6 +199,7 @@ function levelselect:mousepressed(key)
 
     input.checklevelgridpress()
     input.checkhalfselectorpress()
+    input.checkskinbuttonpress()
 
 end
 

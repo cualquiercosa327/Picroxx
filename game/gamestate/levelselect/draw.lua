@@ -166,7 +166,13 @@ function drawbot.levelselect()
 
  end
 
- love.graphics.draw(menu.backbutton, 9, 210)
+  love.graphics.draw(menu.backbutton, 9, 210)
+
+  if skinPath ~= "gfx/puzzle/boards/normal/" then
+    love.graphics.draw(skinbuttonCustom, 295, 6)
+  else
+    love.graphics.draw(skinbuttonNormal, 295, 6)
+  end
  
 end
 

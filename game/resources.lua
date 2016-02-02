@@ -90,6 +90,9 @@ function init.levelselectgraphics()
 	i15x15label = love.graphics.newImage("gfx/levelselect/15x15label.png")
 
 	uncompleted = love.graphics.newImage("gfx/levelselect/uncompleted.png")
+
+	skinbuttonNormal = love.graphics.newImage("gfx/puzzle/boards/normal/skinbutton.png")
+	skinbuttonCustom = love.graphics.newImage(customSkinPath.."skinbutton.png")
 	
 	icon = {}
 	
@@ -100,27 +103,27 @@ end
 
 function init.puzzlegraphics()    
 	
-	background = love.graphics.newImage('gfx/puzzle/boards/normal/bg.png')
-	whiteoverlay = love.graphics.newImage('gfx/puzzle/boards/normal/whiteoverlay.png')
+	background = love.graphics.newImage(skinPath..'bg.png')
+	whiteoverlay = love.graphics.newImage(skinPath..'whiteoverlay.png')
 	
 	mark_indicator = love.graphics.newImage('gfx/puzzle/gui/mark_indicator.png')
 	mark_Xindicator = love.graphics.newImage('gfx/puzzle/gui/mark_Xindicator.png')
 	zoomin_indicator = love.graphics.newImage('gfx/puzzle/gui/zoomin_indicator.png')
 	zoomout_indicator = love.graphics.newImage('gfx/puzzle/gui/zoomout_indicator.png')
 	
-	board5x5 = love.graphics.newImage('gfx/puzzle/boards/normal/board5x5.png')
-	board10x10 = love.graphics.newImage('gfx/puzzle/boards/normal/board10x10.png')
-	board15x15 = love.graphics.newImage('gfx/puzzle/boards/normal/board15x15.png')
+	board5x5 = love.graphics.newImage(skinPath..'board5x5.png')
+	board10x10 = love.graphics.newImage(skinPath..'board10x10.png')
+	board15x15 = love.graphics.newImage(skinPath..'board15x15.png')
 	
-	small15x15 = love.graphics.newImage('gfx/puzzle/boards/normal/small15x15.png')
-	small15x15top = love.graphics.newImage('gfx/puzzle/boards/normal/small15x15top.png')
+	small15x15 = love.graphics.newImage(skinPath..'small15x15.png')
+	small15x15top = love.graphics.newImage(skinPath..'small15x15top.png')
 	
-	mark = love.graphics.newImage('gfx/puzzle/boards/normal/mark.png')
-	Xmark = love.graphics.newImage('gfx/puzzle/boards/normal/Xmark.png')
-	smallmark = love.graphics.newImage('gfx/puzzle/boards/normal/smallmark.png')
-	smallXmark = love.graphics.newImage('gfx/puzzle/boards/normal/smallXmark.png')
+	mark = love.graphics.newImage(skinPath..'mark.png')
+	Xmark = love.graphics.newImage(skinPath..'Xmark.png')
+	smallmark = love.graphics.newImage(skinPath..'smallmark.png')
+	smallXmark = love.graphics.newImage(skinPath..'smallXmark.png')
 
-	local cellhoverA = love.graphics.newImage('gfx/puzzle/boards/normal/cellhover.png')
+	local cellhoverA = love.graphics.newImage(skinPath..'cellhover.png')
 	cellHover = newAnimation(cellhoverA, 15, 15, 0.1, 6)
     cellHover:setMode("loop")
 
@@ -128,8 +131,8 @@ function init.puzzlegraphics()
 	cellHoverTop = newAnimation(cellhovertopA, 17, 17, 0.1, 6)
     cellHoverTop:setMode("loop")
 
-    markedrow = love.graphics.newImage('gfx/puzzle/boards/normal/markedrow.png')
-	markedcolumn = love.graphics.newImage('gfx/puzzle/boards/normal/markedcolumn.png')
+    markedrow = love.graphics.newImage(skinPath..'markedrow.png')
+	markedcolumn = love.graphics.newImage(skinPath..'markedcolumn.png')
 	
 	twoMin = love.graphics.newImage('gfx/puzzle/gui/2min.png')
 	fourMin = love.graphics.newImage('gfx/puzzle/gui/4min.png')
@@ -385,6 +388,9 @@ function unload.levelselectgraphics()
 	levelgrid.smallH_a = nil
 
 	uncompleted = nil
+
+	skinbuttonNormal = nil
+	skinbuttonCustom = nil
 	
     i5x5label = nil
 	i10x10label = nil

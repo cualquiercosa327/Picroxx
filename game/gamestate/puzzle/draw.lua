@@ -66,7 +66,7 @@ function drawtop.ingamezoomed()
 	love.graphics.setColor(148, 148, 173)
 	love.graphics.setFont(squarefont)
 	love.graphics.print(leveldata.number, 89, 2)
-	love.graphics.print(tostring(love.timer.getFPS()), 112, 2)
+	love.graphics.print(leveldata.letter, 112, 2)
 	love.graphics.setColor(255, 255, 255)
 	
 end

@@ -2,7 +2,7 @@
 
 Picroxx! is a Picross homebrew clone for the Nintendo 3DS console. It's fully programmed in Lua, running under the [LÖVEPotion framework](https://github.com/VideahGams/LovePotion). The purpose of the project is porting almost every single puzzle from all mainstream Picross games, like Mario's Picross, Picross 2, Super Mario's Picross, Picross DS and the Picross e series.
 
-Currently, only one course from Mario's Picross is available (comprised of 64 levels), but more puzzles will keep being added. Eventually, the game will also get support for custom puzzles.
+Currently, only half the puzzles from Mario's Picross are available, but i'll keep adding more and more puzzles. Eventually, the game will also get support for custom puzzles.
 
 The game utilizes a very simple format for levels. They only contain four lines of code and the actual puzzle in Lua tables. When loading a puzzle, the game will automatically parse the file into a playable level.
 

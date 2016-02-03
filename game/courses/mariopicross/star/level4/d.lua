@@ -1,7 +1,6 @@
 leveldata.gridsize = 15
-
 leveldata.gamemode = "normal"
-leveldata.number = "4"
+leveldata.number = 4
 leveldata.letter = "D"
 
 irow1 =  {".",".",".",".",".","O","O","O","O","O",".",".",".",".","O"}

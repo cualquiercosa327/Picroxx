@@ -1,5 +1,5 @@
 leveldata.gridsize = 15
-leveldata.gridsizeW = 15
+
 leveldata.gamemode = "normal"
 leveldata.number = "3"
 leveldata.letter = "B"

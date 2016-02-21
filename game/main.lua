@@ -328,8 +328,6 @@ function puzzle:update(dt)
 	    end
 	
         toptimer.update(dt)
-	
-	    if mistake.happening == true then mistake.update(dt) end
 
 	    if love.mouse.isDown(key) then
   

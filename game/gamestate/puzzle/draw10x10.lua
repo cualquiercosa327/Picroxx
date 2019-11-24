@@ -283,7 +283,7 @@ function drawbot.grid10(drawnumbers)
   
     if mistake.happening == true and mistake.timeLoss == 8 then 
         love.graphics.setColor(unpack(mistakeAlpha))
-        ove.graphics.draw(eightMin, gridx + mistake.x, gridy + mistake.y - mistakeSpeed[1]) 
+        love.graphics.draw(eightMin, gridx + mistake.x, gridy + mistake.y - mistakeSpeed[1]) 
         love.graphics.setColor(255, 255, 255, 255)
     end  	    
 	

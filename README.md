@@ -1,6 +1,6 @@
 # Picroxx!, the ultimate Picross clone!
 
-This is a fork of [Substance12's original branch](https://github.com/Substance12/Picroxx), with some minor fixes and additional content. As far as I know, they are not working on this project for the time being, so I have taken it upon myself to add the main series Picross puzzles the dev wanted.
+This is a fork of [Substance12's original branch](https://github.com/Substance12/Picroxx), with some minor fixes and additional content. She began working on a C++ version in early 2017, however no info has been released since then. Since the LÖVE version's engine is basically complete, I figured I'd take a shot at adding the features and content she originally wanted to implement.
 
 Original Description:
 

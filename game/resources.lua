@@ -29,6 +29,8 @@ function init.menugraphics()
 
     overlay.mariopicross = love.graphics.newImage('gfx/mainmenu/overlays/mariopicross.png')
 	
+	overlay.marionosuperpicross = love.graphics.newImage('gfx/mainmenu/overlays/marionosuperpicross.png')
+	
 end
 
 function init.levelselectgraphics()
@@ -264,12 +266,12 @@ function init.sfx()
 	
 	sfx = {}
 	
-	sfx.mark = love.audio.newSource("sfx/puzzle/mark.ogg")
-	sfx.Xmark = love.audio.newSource("sfx/puzzle/Xmark.ogg")
-	sfx.boop = love.audio.newSource("sfx/puzzle/boop.ogg")
-	sfx.mistake = love.audio.newSource("sfx/puzzle/mistake.ogg")
-	sfx.erase = love.audio.newSource("sfx/puzzle/erase.ogg")
-	sfx.clearmelody = love.audio.newSource("sfx/puzzle/clear.ogg")
+	sfx.mark = love.audio.newSource("sfx/puzzle/mark.wav")
+	sfx.Xmark = love.audio.newSource("sfx/puzzle/Xmark.wav")
+	sfx.boop = love.audio.newSource("sfx/puzzle/boop.wav")
+	sfx.mistake = love.audio.newSource("sfx/puzzle/mistake.wav")
+	sfx.erase = love.audio.newSource("sfx/puzzle/erase.wav")
+	sfx.clearmelody = love.audio.newSource("sfx/puzzle/clear.wav")
 
 end
 

@@ -66,13 +66,6 @@ function animation.levelcleared()
 
 end
 
-function animation.mistake()
-    
-    Timer.tween(2, mistakeAlpha, {255, 255, 255, 0}, 'out-linear')
-    Timer.tween(2, mistakeSpeed, {15}, 'out-cubic')
-
-end
-
 function animation.buttonsenter()
 
     mainmenu.buttonsEnter = true
